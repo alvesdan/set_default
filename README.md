@@ -1,3 +1,9 @@
-= SetDefault
+# set_default
 
-This project rocks and uses MIT-LICENSE.
+Just an experiment to allow you do this:
+        
+    class Person < ActiveRecord::Base
+      set_default_to :age, 10
+      set_default_to :name, "John"
+      set_default_to :days, -> (person) { person.age * 365 }
+    end
