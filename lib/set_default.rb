@@ -1,7 +1,6 @@
 require 'set_default/version'
-require 'set_default/base'
+require 'set_default/class_methods'
+require 'set_default/instance_methods'
 
-module SetDefault
-end
-
-ActiveRecord::Base.send(:extend, SetDefault::Base)
+ActiveRecord::Base.send(:extend, SetDefault::ClassMethods)
+ActiveRecord::Base.send(:include, SetDefault::InstanceMethods)

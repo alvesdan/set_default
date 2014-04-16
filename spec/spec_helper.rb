@@ -6,6 +6,7 @@ end
 
 require 'support/active_record'
 require 'active_support'
+require 'pry'
 require 'set_default'
 
 RSpec.configure do |config|
