@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.authors = ["Daniel Alves"]
   s.date = '2014-04-16'
   s.description = 'Include default values in ActiveRecord classes'
-  s.email = ['daniel@danielalves.mes']
+  s.email = ['daniel@danielalves.me']
   s.homepage = ''
   s.summary = ''
 
