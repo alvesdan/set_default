@@ -11,7 +11,7 @@ module SetDefault
     def set_default_column_values
       self.class.columns_to_set.each do |item|
         value = item.value.kind_of?(Proc) ? item.value.call(self) : item.value
-        write_attribute(item.column, value)
+        write_attribute(item.column, value) unless read_attribute(item.column)
       end
     end
 

@@ -13,4 +13,9 @@ describe Person do
     expect(example.name).to eq "John"
     expect(example.days).to eq 3650
   end
+
+  it 'should keep value when defined on initialize' do
+    example = Person.new(name: "Jack")
+    expect(example.name).to eq "Jack"
+  end
 end
