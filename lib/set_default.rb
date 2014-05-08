@@ -1,6 +1,4 @@
 require 'set_default/version'
-require 'set_default/class_methods'
-require 'set_default/instance_methods'
+require 'set_default/base'
 
-ActiveRecord::Base.send(:extend, SetDefault::ClassMethods)
-ActiveRecord::Base.send(:include, SetDefault::InstanceMethods)
+ActiveRecord::Base.send(:include, SetDefault::Base)
