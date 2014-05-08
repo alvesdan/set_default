@@ -6,3 +6,8 @@ ActiveRecord::Migration.create_table :people do |t|
   t.string :name
   t.integer :days
 end
+
+ActiveRecord::Migration.create_table :categories do |t|
+  t.string :name
+  t.string :slug
+end
